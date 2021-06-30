@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 body {
@@ -68,9 +69,9 @@ body {
 }
 
 #banner {
-  height: 1000px;
+  height: 900px;
   margin-left: 300px;
-  background: url(../arquivos/banner_teste.jpg) no-repeat center;
+  background: url(../arquivos/img/banner_principal.jpg) no-repeat center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,12 +79,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#banner_content {
+  opacity: 1;
+  margin-left: -95px;
+  padding-top: 120px;
 }
 
 #banner_content--title {
@@ -91,18 +98,18 @@ body {
   font-size: 45px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #2c2f3f;
 }
 
 #banner_content--paragraph {
-  color: #fff;
+  color: #2c2f3f;
   margin-bottom: 50px;
   font-size: 26px;
 }
 
 #main {
   margin-left: 300px;
-  padding: 0 12px;
+  padding: 60px 12px 0;
 }
 
 #main #about_top--title {
@@ -129,14 +136,42 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 30px;
 }
 
 #main #about_content--photo {
-  padding-right: 12px;
+  padding-right: 30px;
 }
 
 #main #about_content--photo img {
   width: 335px;
   height: 335px;
+}
+
+#main #about_content--text .about_subtitle {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+  margin-bottom: 8px;
+}
+
+#main #about_content--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+
+#main #about_content .list_item {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#main #about_content .list_item span {
+  color: #149ddd;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
