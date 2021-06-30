@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 270px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  overflow-y: auto;
+}
+
+#header #profile_photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0;
+}
+
+#header #profile_photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid #2c2f3f;
+}
+
+#header #profile_title {
+  width: 100%;
+  text-align: center;
+}
+
+#header #profile_title--link {
+  text-decoration: none;
+  color: #fff;
+}
+
+#header .navbar_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#header .navbar_list li {
+  padding: 12px 15px;
+  margin-bottom: 8px;
+}
+
+#header .navbar_list--link {
+  text-decoration: none;
+  color: #fff;
+}
+
+#banner {
+  height: 1000px;
+  margin-left: 300px;
+  background: url(../arquivos/banner_teste.jpg) no-repeat center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner_content--title {
+  margin: 0 0 10px 0;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#banner_content--paragraph {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+}
+
+#main {
+  margin-left: 300px;
+  padding: 0 12px;
+}
+
+#main #about_top--title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+#main #about_top--title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+#main #about_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main #about_content--photo {
+  padding-right: 12px;
+}
+
+#main #about_content--photo img {
+  width: 335px;
+  height: 335px;
+}
+/*# sourceMappingURL=style.css.map */

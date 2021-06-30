@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 270px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  overflow-y: auto;
+
+  #profile {
+    &_photo {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 10px solid #2c2f3f;
+      }
+
+      margin: 15px 0;
+    }
+
+    &_title {
+      width: 100%;
+      text-align: center;
+
+      &--link {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+
+  .navbar {
+    &_list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: 12px 15px;
+        margin-bottom: 8px;
+      }
+
+      &--link {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#banner {
+  // width: ;
+  height: 1000px;
+  margin-left: 300px;
+  background: url(../arquivos/banner_teste.jpg) no-repeat center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // background: red;
+
+  &_content {
+    &--title {
+      margin: 0 0 10px 0;
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 56px;
+      color: #fff;
+    }
+
+    &--paragraph {
+      color: #fff;
+      margin-bottom: 50px;
+      font-size: 26px;
+    }
+  }
+}
+
+#main {
+  margin-left: 300px;
+  padding: 0 12px;
+
+  #about {
+    &_top {
+      &--title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #173b6c;
+
+        &::after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 50px;
+          height: 3px;
+          background: #149ddd;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+
+    &_content {
+      display: flex;
+
+      &--photo {
+        padding-right: 12px;
+        img {
+          width: 335px;
+          height: 335px;
+        }
+      }
+    }
+  }
+}
