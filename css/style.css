@@ -197,9 +197,12 @@ body {
   margin-bottom: 5px;
 }
 
+#main #skills_col--width {
+  width: 48%;
+}
+
 #main #skills .progressbar {
   height: 10px;
-  width: 38vw;
   background: #dce8f8;
 }
 
@@ -231,6 +234,20 @@ body {
 }
 
 #main #skills .progressbar #PYTHON {
+  width: 50%;
+}
+
+#main #resume_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main #resume_row--col1 {
+  width: 50%;
+}
+
+#main #resume_row--col2 {
   width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

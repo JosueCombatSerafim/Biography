@@ -182,9 +182,14 @@ body {
       }
     }
 
+    &_col {
+      &--width {
+        width: 48%;
+      }
+    }
+
     .progressbar {
       height: 10px;
-      width: 38vw;
       background: #dce8f8;
 
       &_level {
@@ -215,6 +220,20 @@ body {
       }
 
       #PYTHON {
+        width: 50%;
+      }
+    }
+  }
+
+  #resume {
+    &_row {
+      display: flex;
+
+      &--col1 {
+        width: 50%;
+      }
+
+      &--col2 {
         width: 50%;
       }
     }
