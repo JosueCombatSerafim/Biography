@@ -89,7 +89,7 @@ body {
 
 #banner_content {
   opacity: 1;
-  margin-left: -95px;
+  margin-left: -150px;
   padding-top: 120px;
 }
 
@@ -107,12 +107,7 @@ body {
   font-size: 26px;
 }
 
-#main {
-  margin-left: 300px;
-  padding: 60px 12px 0;
-}
-
-#main #about_top--title {
+.title {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -121,7 +116,7 @@ body {
   color: #173b6c;
 }
 
-#main #about_top--title::after {
+.title::after {
   content: "";
   position: absolute;
   display: block;
@@ -130,6 +125,11 @@ body {
   background: #149ddd;
   bottom: 0;
   left: 0;
+}
+
+#main {
+  margin-left: 300px;
+  padding: 60px 12px;
 }
 
 #main #about_content {
@@ -173,5 +173,64 @@ body {
 #main #about_content .list_item span {
   color: #149ddd;
   margin-right: 5px;
+}
+
+#main #skills {
+  padding: 60px 0;
+}
+
+#main #skills_level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5vw;
+}
+
+#main #skills_level--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#main #skills .progressbar {
+  height: 10px;
+  width: 38vw;
+  background: #dce8f8;
+}
+
+#main #skills .progressbar_level {
+  width: 0%;
+  height: 10px;
+  background: #149ddd;
+  z-index: 20;
+}
+
+#main #skills .progressbar #HTML {
+  width: 80%;
+}
+
+#main #skills .progressbar #CSS {
+  width: 80%;
+}
+
+#main #skills .progressbar #SASS {
+  width: 70%;
+}
+
+#main #skills .progressbar #JS {
+  width: 40%;
+}
+
+#main #skills .progressbar #VTEX-IO {
+  width: 60%;
+}
+
+#main #skills .progressbar #PYTHON {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

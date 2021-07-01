@@ -81,7 +81,7 @@ body {
   &_content {
     opacity: 1;
 
-    margin-left: -95px;
+    margin-left: -150px;
     padding-top: 120px;
 
     &--title {
@@ -100,33 +100,31 @@ body {
   }
 }
 
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+  }
+}
+
 #main {
   margin-left: 300px;
-  padding: 60px 12px 0;
+  padding: 60px 12px;
 
   #about {
-    &_top {
-      &--title {
-        font-size: 32px;
-        font-weight: bold;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        position: relative;
-        color: #173b6c;
-
-        &::after {
-          content: "";
-          position: absolute;
-          display: block;
-          width: 50px;
-          height: 3px;
-          background: #149ddd;
-          bottom: 0;
-          left: 0;
-        }
-      }
-    }
-
     &_content {
       display: flex;
       padding-top: 30px;
@@ -165,6 +163,59 @@ body {
             margin-right: 5px;
           }
         }
+      }
+    }
+  }
+
+  #skills {
+    padding: 60px 0;
+
+    &_level {
+      display: flex;
+      gap: 2.5vw;
+
+      &--top {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .progressbar {
+      height: 10px;
+      width: 38vw;
+      background: #dce8f8;
+
+      &_level {
+        width: 0%;
+        height: 10px;
+        background: #149ddd;
+        z-index: 20;
+      }
+
+      #HTML {
+        width: 80%;
+      }
+
+      #CSS {
+        width: 80%;
+      }
+
+      #SASS {
+        width: 70%;
+      }
+
+      #JS {
+        width: 40%;
+      }
+
+      #VTEX-IO {
+        width: 60%;
+      }
+
+      #PYTHON {
+        width: 50%;
       }
     }
   }
