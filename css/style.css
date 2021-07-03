@@ -13,7 +13,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 10%;
   width: 270px;
   -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
@@ -129,6 +129,9 @@ body {
 
 #main {
   margin-left: 300px;
+}
+
+#main .sections {
   padding: 60px 12px;
 }
 
@@ -176,7 +179,7 @@ body {
 }
 
 #main #skills {
-  padding: 60px 0;
+  background: #f5f8fd;
 }
 
 #main #skills_level {
@@ -249,5 +252,47 @@ body {
 
 #main #resume_row--col2 {
   width: 50%;
+}
+
+#footer {
+  position: fixed;
+  top: 90%;
+  left: 0;
+  bottom: 0;
+  width: 270px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  overflow-y: auto;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 15px;
+}
+
+#footer_copyright {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#footer_depeloped {
+  font-size: 15px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=style.css.map */
