@@ -9,6 +9,10 @@ body {
   height: 100vh;
 }
 
+#open_menu {
+  display: none;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -21,6 +25,8 @@ body {
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
+
+  transition: all ease-in-out 1s;
 
   #profile {
     &_photo {
@@ -67,6 +73,8 @@ body {
 }
 
 #banner {
+  transition: all ease-in-out 1s;
+
   height: 900px;
   margin-left: 300px;
   background: url(../arquivos/img/banner_principal.jpg) no-repeat center;
@@ -122,6 +130,8 @@ body {
 
 #main {
   margin-left: 300px;
+
+  transition: all ease-in-out 1s;
 
   .sections {
     padding: 60px 20px;
@@ -295,6 +305,8 @@ body {
   background: #040b14;
   overflow-y: auto;
 
+  transition: all ease-in-out 1s;
+
   color: #fff;
 
   display: flex;
@@ -312,5 +324,54 @@ body {
   &_depeloped {
     font-size: 15px;
     font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #open_menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    &--button {
+      background: #149ddd;
+      border: none;
+      border-radius: 50%;
+
+      width: 40px;
+      padding: 10px 0;
+
+      &:active {
+        background: #2c2f3f;
+
+        .open_menu-icon {
+          background: #149ddd;
+        }
+      }
+
+      .open_menu-icon {
+        width: 25px;
+        height: 3px;
+        background: #2c2f3f;
+        margin: 4px auto;
+      }
+    }
+
+    &--checkbox {
+      display: none;
+    }
+  }
+
+  #header,
+  #footer {
+    transform: translateX(-110%);
+    transition: all ease-in-out 1s;
+  }
+
+  #banner,
+  #main {
+    margin-left: 0;
+    transition: all ease-in-out 1s;
   }
 }
