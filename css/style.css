@@ -9,6 +9,20 @@ body {
   height: 100vh;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #8a8fad;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2c2f3f;
+  border-radius: 20px;
+  border: 3px solid #8a8fad;
+}
+
 #open_menu {
   display: none;
 }
@@ -71,6 +85,12 @@ body {
 
 #header .navbar_list--link {
   text-decoration: none;
+  color: #a8a9b4;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+#header .navbar_list--link:hover {
   color: #fff;
 }
 
@@ -145,6 +165,11 @@ body {
   padding: 60px 20px;
 }
 
+#main #about {
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
 #main #about_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,10 +197,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 30px 20% 30px 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 15%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 0 30px 0;
 }
 
 #main #about_content .list_item {
@@ -189,6 +217,11 @@ body {
 }
 
 #main #skills {
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  opacity: 0;
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
   background: #f5f8fd;
 }
 
@@ -250,6 +283,14 @@ body {
   width: 50%;
 }
 
+#main #resume {
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  opacity: 0;
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
 #main #resume_row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,6 +350,30 @@ body {
   width: 48%;
 }
 
+#main #portfolio {
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  opacity: 0;
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
+#main #services {
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  opacity: 0;
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
+#main #contacto {
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  opacity: 0;
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+
 #footer {
   position: fixed;
   top: 90%;
@@ -353,12 +418,64 @@ body {
   font-weight: normal;
 }
 
+@media screen and (max-width: 720px) {
+  #banner {
+    height: 720px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #banner_content {
+    margin-left: 8px;
+    padding-top: 20px;
+  }
+  #banner_content--title {
+    font-size: 30px;
+  }
+  #banner_content--paragraph {
+    font-size: 23px;
+  }
+  #skills_level {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0 !important;
+  }
+  #skills_col--width {
+    width: 100% !important;
+  }
+  #resume_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #resume_row--col1, #resume_row--col2 {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #about_content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #about_content--photo {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #open_menu {
     display: block;
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
+    z-index: 20;
   }
   #open_menu--button {
     background: #149ddd;
@@ -378,6 +495,8 @@ body {
     height: 3px;
     background: #2c2f3f;
     margin: 4px auto;
+    -webkit-transition: all 0.7s linear;
+    transition: all 0.7s linear;
   }
   #open_menu--checkbox {
     display: none;

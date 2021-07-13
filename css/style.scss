@@ -7,6 +7,20 @@
 body {
   width: 100%;
   height: 100vh;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: lighten(#2c2f3f, 40);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #2c2f3f;
+    border-radius: 20px;
+    border: 3px solid lighten(#2c2f3f, 40);
+  }
 }
 
 #open_menu {
@@ -66,7 +80,13 @@ body {
 
       &--link {
         text-decoration: none;
-        color: #fff;
+        color: #a8a9b4;
+
+        transition: all ease-in-out 0.2s;
+
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
@@ -138,6 +158,11 @@ body {
   }
 
   #about {
+    // transform: translateY(25%);
+    // opacity: 0;
+
+    transition: all ease-in-out 1s;
+
     &_content {
       display: flex;
       padding-top: 30px;
@@ -161,9 +186,13 @@ body {
 
       &--list {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
 
-        margin: 30px 20% 30px 0;
+        gap: 15%;
+
+        flex-wrap: wrap;
+
+        margin: 30px 0 30px 0;
       }
 
       .list {
@@ -181,6 +210,11 @@ body {
   }
 
   #skills {
+    transform: translateY(25%);
+    opacity: 0;
+
+    transition: all ease-in-out 1s;
+
     background: #f5f8fd;
 
     &_level {
@@ -239,6 +273,11 @@ body {
   }
 
   #resume {
+    transform: translateY(25%);
+    opacity: 0;
+
+    transition: all ease-in-out 1s;
+
     &_row {
       display: flex;
       justify-content: space-between;
@@ -290,6 +329,27 @@ body {
       }
     }
   }
+
+  #portfolio {
+    transform: translateY(25%);
+    opacity: 0;
+
+    transition: all ease-in-out 1s;
+  }
+
+  #services {
+    transform: translateY(25%);
+    opacity: 0;
+
+    transition: all ease-in-out 1s;
+  }
+
+  #contacto {
+    transform: translateY(25%);
+    opacity: 0;
+
+    transition: all ease-in-out 1s;
+  }
 }
 
 #footer {
@@ -327,12 +387,68 @@ body {
   }
 }
 
+@media screen and (max-width: 720px) {
+  #banner {
+    height: 720px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &_content {
+      margin-left: 8px;
+      padding-top: 20px;
+
+      &--title {
+        font-size: 30px;
+      }
+
+      &--paragraph {
+        font-size: 23px;
+      }
+    }
+  }
+
+  #skills {
+    &_level {
+      flex-direction: column;
+      gap: 0 !important;
+    }
+
+    &_col--width {
+      width: 100% !important;
+    }
+  }
+
+  #resume {
+    &_row {
+      flex-direction: column;
+
+      &--col1,
+      &--col2 {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #about {
+    &_content {
+      flex-wrap: wrap;
+
+      &--photo {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #open_menu {
     display: block;
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
+
+    z-index: 20;
 
     &--button {
       background: #149ddd;
@@ -355,6 +471,8 @@ body {
         height: 3px;
         background: #2c2f3f;
         margin: 4px auto;
+
+        transition: all 0.7s linear;
       }
     }
 

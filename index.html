@@ -14,11 +14,11 @@
     <!-- MENU BUTTON -->
 
     <div id="open_menu">
-        <label for="open_menu--checkbox" >
+        <label for="open_menu--checkbox" id="label-menu-icon">
             <div id="open_menu--button"> 
-                <div class="open_menu-icon"></div>
-                <div class="open_menu-icon"></div>
-                <div class="open_menu-icon"></div>
+                <div class="open_menu-icon" id="menu-icon_1"></div>
+                <div class="open_menu-icon" id="menu-icon_2"></div>
+                <div class="open_menu-icon" id="menu-icon_3"></div>
             </div>  
         </label>
         <input type="checkbox" id="open_menu--checkbox">           
@@ -43,25 +43,25 @@
         <nav class="navbar">
             <ul class="navbar_list">
                 <li>
-                    <a href="#" class="navbar_list--link"><i></i> Home</a>
+                    <a href="#" class="navbar_list--link" id="link_home">Home</a>
                 </li>
                 <li>
-                    <a href="#about_top--title" class="navbar_list--link">Sobre</a>
+                    <a href="#about_top--title" class="navbar_list--link" id="link_about">Sobre</a>
                 </li>
                 <li>
-                    <a href="#skills_top--title" class="navbar_list--link">Skills</a>
+                    <a href="#skills_top--title" class="navbar_list--link" id="link_skills">Skills</a>
                 </li>
                 <li>
-                    <a href="#resume_top--title" class="navbar_list--link">Resume</a>
+                    <a href="#resume_top--title" class="navbar_list--link" id="link_resume">Resume</a>
                 </li>
                 <li>
-                    <a href="#portfolio_top--title" class="navbar_list--link">Portifólio</a>
+                    <a href="#portfolio_top--title" class="navbar_list--link" id="link_portfolio">Portifólio</a>
                 </li>
                 <li>
-                    <a href="#services_top--title" class="navbar_list--link">Serviços</a>
+                    <a href="#services_top--title" class="navbar_list--link" id="link_services">Serviços</a>
                 </li>
                 <li>
-                    <a href="#contacto_top--title" class="navbar_list--link">Contato</a>
+                    <a href="#contacto_top--title" class="navbar_list--link" id="link_contacto">Contato</a>
                 </li>
             </ul>
 
@@ -102,7 +102,7 @@
                         <ul class="list">
                             <li class="list_item"><span>></span> Data de Nascimento: 09 Abril 2002</li>
 
-                            <li class="list_item"><span>></span> Linkedin: www.example.com.br</li>
+                            <li class="list_item"><span>></span> Linkedin: <a target="_blank" href="https://www.linkedin.com/in/josué-combat-serafim-aa5962209">Josué Combat Serafim</a></li>
 
                             <li class="list_item"><span>></span> Telefone: +55 22 99222-0167</li>
 
@@ -303,6 +303,8 @@
         </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="js/anchorLink.js"></script>
+    <script src="js/menuResponsive.js"></script>
+    <script src="js/lazyLoad.js"></script>
 </body>
 </html>
