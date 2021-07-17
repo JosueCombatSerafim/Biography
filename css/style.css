@@ -72,6 +72,12 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 
+#header #link_home {
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #149ddd;
+}
+
 #header .navbar_list {
   list-style: none;
   margin: 0;
@@ -337,6 +343,16 @@ body::-webkit-scrollbar-thumb {
   width: -moz-fit-content;
   width: fit-content;
   margin: 10px 0;
+}
+
+#main #resume_row .complement_topics {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 20px 0 15px 0;
+}
+
+#main #resume_row .complement_paragraph {
+  margin-left: 35px;
 }
 
 #main #resume_row .resume_border {
